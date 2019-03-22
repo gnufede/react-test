@@ -5,6 +5,11 @@ import { Code } from '../styles/style';
 import s from '../styles/home.style';
 
 export default function Home() {
+  const getUrl = text => {
+      const root = "/react-test";
+      return `${root}/${text}`;
+  };
+
   const repoReadmeLink = text => (
     <Interactive
       as="a"
@@ -31,14 +36,14 @@ export default function Home() {
         <Interactive
           as={Link}
           {...s.link}
-          to="/example"
+            to={getUrl("example")}
         >Example page</Interactive>
       </div>
       <div style={s.pageLinkContainer}>
         <Interactive
           as={Link}
           {...s.link}
-          to="/example/two-deep?field1=foo&field2=bar#boom!"
+            to={getUrl("example/two-deep?field1=foo&field2=bar#boom!")}
         >Example two deep with query and hash</Interactive>
       </div>
     </div>
