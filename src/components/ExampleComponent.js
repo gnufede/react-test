@@ -18,7 +18,7 @@ export default function ExampleComponent() {
   return (
     <Switch>
       <Route
-        exact path={getUrl("/example/two-deep")}
+        exact path={getUrl("example/two-deep")}
         render={({ location }) => (
           <div>
             <ExamplePageText />
@@ -27,7 +27,7 @@ export default function ExampleComponent() {
         )}
       />
       <Route
-        exact path={getUrl("/example")}
+        exact path={getUrl("example")}
         render={() => (
           <div>
             <ExamplePageText />
