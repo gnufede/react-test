@@ -23,8 +23,8 @@ export default function App() {
       </nav>
 
       <Switch>
-        <Route exact path="/" component={Home} />
-        <Route path="/example" component={ExampleComponent} />
+        <Route exact path="/react-test/" component={Home} />
+        <Route path="/react-test/example" component={ExampleComponent} />
         <Route component={PageNotFound} />
       </Switch>
 
