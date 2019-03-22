@@ -4,6 +4,7 @@ import Interactive from 'react-interactive';
 import { Link } from 'react-router-dom';
 import { Li } from '../styles/style';
 import s from '../styles/exampleTwoDeepComponent.style';
+import { getUrl } from './App';
 
 const propTypes = {
   location: PropTypes.object.isRequired,
@@ -38,7 +39,7 @@ export default function ExampleTwoDeepComponent({ location }) {
       <div style={s.lineContainer}>
         <Interactive
           as={Link}
-          to={`/example/two-deep${queryString}${hashFragment}`}
+          to={getUrl(`example/two-deep${queryString}${hashFragment}`)}
           {...s.link}
         >{linkText}</Interactive>
       </div>
