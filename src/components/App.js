@@ -7,6 +7,12 @@ import PageNotFound from './PageNotFound';
 import Breadcrumbs from './Breadcrumbs';
 import s from '../styles/app.style';
 
+
+export function getUrl(text) {
+    const root = "/react-test";
+    return `${root}/${text}`;
+};
+
 export default function App() {
   return (
     <div style={s.root}>

@@ -3,13 +3,9 @@ import Interactive from 'react-interactive';
 import { Link } from 'react-router-dom';
 import { Code } from '../styles/style';
 import s from '../styles/home.style';
+import { getUrl } from './App';
 
 export default function Home() {
-  const getUrl = text => {
-      const root = "/react-test";
-      return `${root}/${text}`;
-  };
-
   const repoReadmeLink = text => (
     <Interactive
       as="a"
