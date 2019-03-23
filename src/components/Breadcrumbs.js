@@ -5,7 +5,7 @@ import Interactive from 'react-interactive';
 import s from '../styles/style';
 
 const breadCrumbTitles = {
-  '': 'Home',
+  'react-test': 'Home',
   example: 'Example',
   'two-deep': 'Two Deep',
 };
@@ -35,6 +35,6 @@ BreadcrumbsItem.propTypes = {
 
 export default function Breadcrumbs() {
   return (
-    <Route path="/" component={BreadcrumbsItem} />
+    <Route path="/react-test/" component={BreadcrumbsItem} />
   );
 }
